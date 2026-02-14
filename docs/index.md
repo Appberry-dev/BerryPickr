@@ -22,8 +22,8 @@ Use BerryPickr when you need one consistent color state engine across:
 ## Quick example
 
 ```ts
-import { createBerryPickrController, mountBerryPickrUI, createCssVarBinding } from 'berrypickr';
-import 'berrypickr/styles/base.css';
+import { createBerryPickrController, mountBerryPickrUI, createCssVarBinding } from '@appberry/berrypickr';
+import '@appberry/berrypickr/styles/base.css';
 
 const controller = createBerryPickrController({
   defaultValue: '#486dff',

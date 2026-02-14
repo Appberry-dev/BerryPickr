@@ -17,21 +17,21 @@ import {
   createStyleBinding,
   getContrastRatio,
   analyzeContrast
-} from 'berrypickr';
+} from '@appberry/berrypickr';
 ```
 
 ## Entry points
 
-- `berrypickr`
-- `berrypickr/react`
-- `berrypickr/vue`
-- `berrypickr/svelte`
-- `berrypickr/styles/base.css`
-- `berrypickr/styles/skin-template.css`
+- `@appberry/berrypickr`
+- `@appberry/berrypickr/react`
+- `@appberry/berrypickr/vue`
+- `@appberry/berrypickr/svelte`
+- `@appberry/berrypickr/styles/base.css`
+- `@appberry/berrypickr/styles/skin-template.css`
 
 ## Options/Methods
 
-## Core exports (`berrypickr`)
+## Core exports (`@appberry/berrypickr`)
 
 | Export | Kind | Purpose | Detailed docs |
 | --- | --- | --- | --- |
@@ -49,9 +49,9 @@ import {
 
 | Entry point | Exports | Guide |
 | --- | --- | --- |
-| `berrypickr/react` | `useBerryPickrController`, `useMountedBerryPickrUI` | [Integrations](/integrations) |
-| `berrypickr/vue` | `useVueBerryPickrController`, `useMountedVueBerryPickrUI` | [Integrations](/integrations) |
-| `berrypickr/svelte` | `createSvelteBerryPickrStore`, `berryPickr` | [Integrations](/integrations) |
+| `@appberry/berrypickr/react` | `useBerryPickrController`, `useMountedBerryPickrUI` | [Integrations](/integrations) |
+| `@appberry/berrypickr/vue` | `useVueBerryPickrController`, `useMountedVueBerryPickrUI` | [Integrations](/integrations) |
+| `@appberry/berrypickr/svelte` | `createSvelteBerryPickrStore`, `berryPickr` | [Integrations](/integrations) |
 
 ## Utility APIs
 
@@ -113,10 +113,10 @@ Commonly used public types include:
 - `BerryPickrBinding`
 - `BerryPickrContrastResult`
 
-Import from `berrypickr`:
+Import from `@appberry/berrypickr`:
 
 ```ts
-import type { BerryPickrControllerOptions, BerryPickrPlugin } from 'berrypickr';
+import type { BerryPickrControllerOptions, BerryPickrPlugin } from '@appberry/berrypickr';
 ```
 
 ## Gotchas

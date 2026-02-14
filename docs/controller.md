@@ -7,7 +7,7 @@ Use this page when you are implementing serious product behavior around color st
 ## Quick example
 
 ```ts
-import { createBerryPickrController } from 'berrypickr';
+import { createBerryPickrController } from '@appberry/berrypickr';
 
 const controller = createBerryPickrController({
   defaultValue: '#486dff',

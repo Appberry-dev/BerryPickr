@@ -7,7 +7,7 @@ Read this before deep implementation work so your team shares the same `controll
 ## Quick example
 
 ```ts
-import { createBerryPickrController, mountBerryPickrUI } from 'berrypickr';
+import { createBerryPickrController, mountBerryPickrUI } from '@appberry/berrypickr';
 
 const controller = createBerryPickrController({
   defaultValue: '#2f72d6',

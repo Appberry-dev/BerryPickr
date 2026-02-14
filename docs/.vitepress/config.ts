@@ -6,6 +6,7 @@ import pkg from '../../package.json';
 const dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
+    base: '/BerryPickr/',
     title: 'BerryPickr',
     description:
         'Headless color controller + skinnable UI picker for modern website builders and apps.',

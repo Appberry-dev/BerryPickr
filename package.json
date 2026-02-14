@@ -1,5 +1,5 @@
 {
-  "name": "berrypickr",
+  "name": "@appberry/berrypickr",
   "version": "2.0.0",
   "description": "Modern, framework-agnostic color picker for evergreen browsers.",
   "license": "Apache-2.0",
@@ -94,6 +94,9 @@
     "vue": {
       "optional": true
     }
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.11.1",

@@ -7,7 +7,7 @@ Use plugins when you need reusable side effects around color changes or commits 
 ## Quick example
 
 ```ts
-import { createBerryPickrController, type BerryPickrPlugin } from 'berrypickr';
+import { createBerryPickrController, type BerryPickrPlugin } from '@appberry/berrypickr';
 
 const auditPlugin: BerryPickrPlugin = {
   name: 'audit-plugin',
@@ -77,7 +77,7 @@ import type {
   BerryPickrChangeEvent,
   BerryPickrCommitEvent,
   BerryPickrStateSnapshot
-} from 'berrypickr';
+} from '@appberry/berrypickr';
 
 interface TelemetrySink {
   track(name: string, payload: Record<string, unknown>): void;

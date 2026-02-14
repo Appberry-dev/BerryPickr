@@ -26,15 +26,15 @@ Yes. The core API is headless-first. You can skip `mountBerryPickrUI` and drive 
 
 Yes:
 
-- `berrypickr/react`
-- `berrypickr/vue`
-- `berrypickr/svelte`
+- `@appberry/berrypickr/react`
+- `@appberry/berrypickr/vue`
+- `@appberry/berrypickr/svelte`
 
 See [Integrations](/integrations).
 
 ## How do I theme the default picker?
 
-Import `berrypickr/styles/base.css`, then override `.bp-app` CSS tokens. See [Styling Guide](/styling).
+Import `@appberry/berrypickr/styles/base.css`, then override `.bp-app` CSS tokens. See [Styling Guide](/styling).
 
 ## What is the difference between `change` and `commit`?
 

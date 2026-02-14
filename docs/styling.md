@@ -24,8 +24,8 @@ Use this page when you want BerryPickr to match your product brand while keeping
 
 BerryPickr ships two style assets:
 
-- `berrypickr/styles/base.css`: required structural and interaction styles
-- `berrypickr/styles/skin-template.css`: starter token set to copy into app CSS
+- `@appberry/berrypickr/styles/base.css`: required structural and interaction styles
+- `@appberry/berrypickr/styles/skin-template.css`: starter token set to copy into app CSS
 
 ### `.bp-app` skin token contract
 

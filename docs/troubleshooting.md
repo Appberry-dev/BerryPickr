@@ -24,7 +24,7 @@ controller.on('pluginError', ({ plugin, phase, error, transactionId }) => {
 | Alpha controls missing | `lockAlpha` is true | Set `lockAlpha: false` if alpha editing is required |
 | Recent colors not persisting | No storage adapter or storage errors | Provide `recentColors.storage` and verify load/save logic |
 | Plugin failures stop UI flow | `pluginErrorPolicy` is `'throw'` | Switch to `'emit'` for resilient runtime behavior |
-| Styles not applied | Missing base stylesheet import | Import `berrypickr/styles/base.css` once in app bundle |
+| Styles not applied | Missing base stylesheet import | Import `@appberry/berrypickr/styles/base.css` once in app bundle |
 | Outside click does not close | Non-popover mode or `closeOnOutsideClick: false` | Use popover mode and enable outside close |
 | Escape key does not close | `closeOnEscape: false` or wrong document context | Enable option and ensure listeners are attached to correct owner document |
 

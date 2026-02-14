@@ -13,8 +13,8 @@ Use this page when you want your first working BerryPickr integration quickly wi
 ## Quick example
 
 ```ts
-import { createBerryPickrController, mountBerryPickrUI } from 'berrypickr';
-import 'berrypickr/styles/base.css';
+import { createBerryPickrController, mountBerryPickrUI } from '@appberry/berrypickr';
+import '@appberry/berrypickr/styles/base.css';
 
 const controller = createBerryPickrController({
   defaultValue: '#4169f6'
@@ -35,14 +35,14 @@ controller.on('change', ({ source, value, transactionId }) => {
 1. Install the package.
 
 ```bash
-pnpm add berrypickr
+pnpm add @appberry/berrypickr
 ```
 
 2. Import APIs and CSS.
 
 ```ts
-import { createBerryPickrController, mountBerryPickrUI } from 'berrypickr';
-import 'berrypickr/styles/base.css';
+import { createBerryPickrController, mountBerryPickrUI } from '@appberry/berrypickr';
+import '@appberry/berrypickr/styles/base.css';
 ```
 
 3. Create a `controller`.
@@ -105,7 +105,7 @@ controller.destroy();
 
 ## Gotchas
 
-- Import `berrypickr/styles/base.css` or the mounted UI has no layout styling.
+- Import `@appberry/berrypickr/styles/base.css` or the mounted UI has no layout styling.
 - `setValue('bad-color')` returns `false` and does not emit a change.
 - `change` and `commit` are different events: `change` is live editing, `commit` is explicit save.
 - `mount.update()` cannot change `target` or `container`; remount for that.

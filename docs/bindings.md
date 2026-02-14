@@ -7,7 +7,7 @@ Use bindings when the `controller` should drive live CSS output without writing 
 ## Quick example
 
 ```ts
-import { createBerryPickrController, createCssVarBinding } from 'berrypickr';
+import { createBerryPickrController, createCssVarBinding } from '@appberry/berrypickr';
 
 const controller = createBerryPickrController({ defaultValue: '#486dff' });
 

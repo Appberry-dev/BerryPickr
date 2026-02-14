@@ -7,7 +7,7 @@ Use this page when embedding BerryPickr in React, Vue, Svelte, iframes, or shado
 ## Quick example
 
 ```ts
-import { createBerryPickrController, mountBerryPickrUI } from 'berrypickr';
+import { createBerryPickrController, mountBerryPickrUI } from '@appberry/berrypickr';
 
 const controller = createBerryPickrController({ defaultValue: '#486dff' });
 mountBerryPickrUI(controller, { target: '#color-target', mode: 'popover' });
@@ -21,7 +21,7 @@ mountBerryPickrUI(controller, { target: '#color-target', mode: 'popover' });
 
 ```tsx
 import { useRef } from 'react';
-import { useBerryPickrController, useMountedBerryPickrUI } from 'berrypickr/react';
+import { useBerryPickrController, useMountedBerryPickrUI } from '@appberry/berrypickr/react';
 
 export function BrandColorField() {
   const targetRef = useRef<HTMLButtonElement | null>(null);
@@ -56,7 +56,7 @@ const { controller } = useBerryPickrController({
 
 ```ts
 import { ref } from 'vue';
-import { useVueBerryPickrController, useMountedVueBerryPickrUI } from 'berrypickr/vue';
+import { useVueBerryPickrController, useMountedVueBerryPickrUI } from '@appberry/berrypickr/vue';
 
 const target = ref<HTMLElement | null>(null);
 const { controller, state } = useVueBerryPickrController({ defaultValue: '#486dff' });
@@ -82,7 +82,7 @@ watchEffect(() => {
 ### Store helper
 
 ```ts
-import { createSvelteBerryPickrStore } from 'berrypickr/svelte';
+import { createSvelteBerryPickrStore } from '@appberry/berrypickr/svelte';
 
 const { controller, state, destroy } = createSvelteBerryPickrStore({
   defaultValue: '#486dff'
@@ -93,7 +93,7 @@ const { controller, state, destroy } = createSvelteBerryPickrStore({
 
 ```svelte
 <script lang="ts">
-  import { berryPickr, createSvelteBerryPickrStore } from 'berrypickr/svelte';
+  import { berryPickr, createSvelteBerryPickrStore } from '@appberry/berrypickr/svelte';
   const { controller } = createSvelteBerryPickrStore({ defaultValue: '#486dff' });
 </script>
 
@@ -137,7 +137,7 @@ if (root && target) {
 
 ## Gotchas
 
-- Framework wrappers do not auto-import base CSS; import `berrypickr/styles/base.css` once.
+- Framework wrappers do not auto-import base CSS; import `@appberry/berrypickr/styles/base.css` once.
 - In React, remounting target nodes can invalidate existing mount refs.
 - For iframe/shadow hosts, mixing documents/roots for `target` and `container` causes close and positioning issues.
 

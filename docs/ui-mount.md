@@ -7,8 +7,8 @@ Use this page when you want BerryPickr's default UI and need precise behavior ar
 ## Quick example
 
 ```ts
-import { createBerryPickrController, mountBerryPickrUI } from 'berrypickr';
-import 'berrypickr/styles/base.css';
+import { createBerryPickrController, mountBerryPickrUI } from '@appberry/berrypickr';
+import '@appberry/berrypickr/styles/base.css';
 
 const controller = createBerryPickrController({ defaultValue: '#486dff' });
 

@@ -11,7 +11,7 @@ It gives you one typed color state engine (`controller`) that you can use with:
 ## Install
 
 ```bash
-pnpm add berrypickr
+pnpm add @appberry/berrypickr
 ```
 
 ## Why BerryPickr
@@ -24,7 +24,7 @@ pnpm add berrypickr
 - Optional UI mount with popover mode and runtime updates
 - Binding helpers for CSS variables and inline styles
 - WCAG contrast helpers (`getContrastRatio`, `analyzeContrast`)
-- Official adapter entry points: `berrypickr/react`, `berrypickr/vue`, `berrypickr/svelte`
+- Official adapter entry points: `@appberry/berrypickr/react`, `@appberry/berrypickr/vue`, `@appberry/berrypickr/svelte`
 
 ## Quick Start
 
@@ -34,8 +34,8 @@ import {
   mountBerryPickrUI,
   createCssVarBinding,
   type BerryPickrPlugin
-} from 'berrypickr';
-import 'berrypickr/styles/base.css';
+} from '@appberry/berrypickr';
+import '@appberry/berrypickr/styles/base.css';
 
 const telemetryPlugin: BerryPickrPlugin = {
   name: 'telemetry',
@@ -85,8 +85,8 @@ Minimum lifecycle you should wire in production:
 
 BerryPickr ships with two CSS assets:
 
-- `berrypickr/styles/base.css` (required structure + interactions)
-- `berrypickr/styles/skin-template.css` (starter theme tokens)
+- `@appberry/berrypickr/styles/base.css` (required structure + interactions)
+- `@appberry/berrypickr/styles/skin-template.css` (starter theme tokens)
 
 Use CSS variables on `.bp-app` to skin without rewriting component structure:
 

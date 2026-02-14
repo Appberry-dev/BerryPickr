@@ -7,7 +7,7 @@ Use these copy-paste patterns to implement common production workflows without d
 ## Quick example
 
 ```ts
-import { createBerryPickrController } from 'berrypickr';
+import { createBerryPickrController } from '@appberry/berrypickr';
 
 const controller = createBerryPickrController({ defaultValue: '#486dff' });
 ```
@@ -19,7 +19,7 @@ const controller = createBerryPickrController({ defaultValue: '#486dff' });
 Use this when live editing should not trigger expensive persistence.
 
 ```ts
-import { createCssVarBinding } from 'berrypickr';
+import { createCssVarBinding } from '@appberry/berrypickr';
 
 createCssVarBinding({
   controller,
