@@ -1,0 +1,120 @@
+{
+  "name": "berrypickr",
+  "version": "2.0.0",
+  "description": "Modern, framework-agnostic color picker for evergreen browsers.",
+  "license": "Apache-2.0",
+  "author": "Appberry.dev",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "color",
+    "colorpicker",
+    "ui",
+    "typescript",
+    "berrypickr"
+  ],
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "main": "./dist/berrypickr.js",
+  "module": "./dist/berrypickr.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/berrypickr.js"
+    },
+    "./controller": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/berrypickr.js"
+    },
+    "./bindings": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/berrypickr.js"
+    },
+    "./contrast": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/berrypickr.js"
+    },
+    "./mount": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/berrypickr.js"
+    },
+    "./react": {
+      "types": "./dist/react.d.ts",
+      "import": "./dist/react.js"
+    },
+    "./vue": {
+      "types": "./dist/vue.d.ts",
+      "import": "./dist/vue.js"
+    },
+    "./svelte": {
+      "types": "./dist/svelte.d.ts",
+      "import": "./dist/svelte.js"
+    },
+    "./styles/base.css": "./dist/styles/base.css",
+    "./styles/skin-template.css": "./dist/styles/skin-template.css"
+  },
+  "scripts": {
+    "dev": "vitepress dev docs --host 0.0.0.0 --port 5173",
+    "build": "pnpm run build:lib && pnpm run build:styles && pnpm run docs:build",
+    "build:types": "tsc -p tsconfig.build.json",
+    "build:lib": "vite build && pnpm run build:types",
+    "build:styles": "node ./scripts/copy-styles.mjs",
+    "docs:dev": "vitepress dev docs --host 0.0.0.0 --port 5173",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs --host 0.0.0.0 --port 4174",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "dev:fixture": "vite --config playwright/vite.playwright.config.ts --host 127.0.0.1 --port 43123 --strictPort",
+    "test:e2e": "playwright test",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "check": "pnpm run lint && pnpm run typecheck && pnpm run test",
+    "check:ci": "pnpm run check && pnpm run test:e2e",
+    "prepublishOnly": "pnpm run check && pnpm run build:lib && pnpm run build:styles"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "svelte": ">=4",
+    "vue": ">=3.3"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "svelte": {
+      "optional": true
+    },
+    "vue": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.11.1",
+    "@changesets/cli": "2.28.1",
+    "@eslint/js": "9.17.0",
+    "@playwright/test": "1.55.1",
+    "@types/node": "22.10.2",
+    "@types/react": "^19.2.14",
+    "eslint": "9.17.0",
+    "eslint-config-prettier": "9.1.0",
+    "globals": "15.13.0",
+    "jsdom": "25.0.1",
+    "prettier": "3.4.2",
+    "react": "^19.2.4",
+    "svelte": "^5.51.0",
+    "typescript": "5.7.2",
+    "typescript-eslint": "8.18.2",
+    "vite": "6.0.5",
+    "vitepress": "1.5.0",
+    "vitest": "2.1.9",
+    "vue": "^3.5.28"
+  },
+  "packageManager": "pnpm@9.0.6"
+}

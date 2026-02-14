@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BerryPickr Fixture</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Sora', 'Avenir Next', sans-serif;
+        background: linear-gradient(135deg, #f2f7ff, #f8fcff);
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+
+      .shell {
+        width: min(760px, 90vw);
+        border-radius: 18px;
+        border: 1px solid rgba(70, 98, 188, 0.2);
+        background: rgba(255, 255, 255, 0.92);
+        padding: 24px;
+      }
+
+      #berryPickr-target {
+        border: 1px solid rgba(70, 98, 188, 0.4);
+        border-radius: 999px;
+        padding: 12px 18px;
+        background: #fff;
+        cursor: pointer;
+      }
+
+      #result {
+        margin-top: 12px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <button id="berryPickr-target" type="button">Open BerryPickr</button>
+      <div id="result"></div>
+      <div id="integration-root"></div>
+    </div>
+    <script type="module" src="/main.ts"></script>
+  </body>
+</html>

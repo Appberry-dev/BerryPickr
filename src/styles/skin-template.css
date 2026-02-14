@@ -1,0 +1,15 @@
+/*
+  BerryPickr skin template.
+  Copy these tokens into your app stylesheet and adjust them to match your brand.
+*/
+.bp-app {
+  --bp-surface: #f8fbff;
+  --bp-text: #1a2140;
+  --bp-muted: #5f6b91;
+  --bp-border: rgba(34, 54, 105, 0.16);
+  --bp-shadow: 0 22px 42px rgba(57, 86, 171, 0.24);
+  --bp-accent: #245fd1;
+  --bp-danger: #ac2f44;
+  --bp-focus: rgba(36, 95, 209, 0.4);
+  --bp-radius: 16px;
+}

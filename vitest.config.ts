@@ -1,0 +1,11 @@
+import { defineConfig } from 'vitest/config';
+
+export default defineConfig({
+  define: {
+    __BERRYPICKR_VERSION__: JSON.stringify('0.0.0-test')
+  },
+  test: {
+    environment: 'jsdom',
+    include: ['test/**/*.test.ts']
+  }
+});

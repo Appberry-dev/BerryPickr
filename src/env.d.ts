@@ -1,0 +1,1 @@
+declare const __BERRYPICKR_VERSION__: string;
